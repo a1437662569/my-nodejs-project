@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      golang: 1.18  # 可以根据你的 Go 版本调整
+    commands:
+      - echo "Go 环境已经安装"
+
+  build:
+    commands:
+      - echo "开始构建..."
+      - go run main.go  # 执行 main.go
+
+artifacts:
+  files:
+    - main.go
